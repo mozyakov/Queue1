@@ -7,7 +7,6 @@ public class Main {
         for (Person person : people) {
             queue.offer(person);
         }
-
         while (!queue.isEmpty()) {
             Person person = queue.poll();
             System.out.println("Клиент " + person.getFirstname() + " использовал билет");
@@ -17,7 +16,6 @@ public class Main {
             }
         }
     }
-
     public static List<Person> generateClient() {
         List<Person> ans = new ArrayList<>();
         ans.add(new Person("Solar", "S", 1));
